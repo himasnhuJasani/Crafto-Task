@@ -1,5 +1,5 @@
 # Crafto-Task
-
+FYI: If login doesnot redirect to quotes please refresh and enter same username and otp
 # Quote Management Application
 
 ## Overview
