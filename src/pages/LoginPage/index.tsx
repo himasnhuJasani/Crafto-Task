@@ -10,7 +10,7 @@ const LoginPage = () => {
 
   const handleLogin = async (username: string, otp: string) => {
     try{
-    const { data } = await axios.post('https://assignment.stage.crafto.app/login',{
+    const { data } = await axios.post(`${process.env.REACT_APP_CRAFTO_BASE_URL}/login`,{
        "username": username,
        "otp": otp
     })

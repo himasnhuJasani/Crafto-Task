@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const uploadMedia = async (file: any) => {
   const formData = new FormData();
   formData.append('file', file);
-  const {data} = await axios.post('https://crafto.app/crafto/v1.0/media/assignment/upload', formData, {
+  const {data} = await axios.post(`${process.env.REACT_APP_CRAFTO_MEDIA_UPLOAD_BASE_URL}/upload`, formData, {
     headers: {
       'Content-Type': 'multipart/form-data',
     },
@@ -16,7 +16,7 @@ const uploadMedia = async (file: any) => {
 
 const createQuote = async (quoteText : string, mediaUrl: string) => {
     const token = localStorage.getItem('LoginAuthToken')
-    const {data} = await axios.post('https://assignment.stage.crafto.app/postQuote', { text: quoteText, mediaUrl }, {
+    const {data} = await axios.post(`${process.env.REACT_APP_CRAFTO_BASE_URL}/postQuote`, { text: quoteText, mediaUrl }, {
     headers: {
       'Content-Type': 'application/json',
       Authorization: token

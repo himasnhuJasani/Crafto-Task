@@ -7,7 +7,7 @@ const fetchQuotes = async (page: any) => {
   const token = localStorage.getItem("LoginAuthToken");
   try {
     const { data } = await axios.get(
-      `https://assignment.stage.crafto.app/getQuotes?limit=20&offset=${page}`,
+      `${process.env.REACT_APP_CRAFTO_BASE_URL}/getQuotes?limit=20&offset=${page}`,
       {
         headers: {
           Authorization: token,
