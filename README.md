@@ -34,6 +34,19 @@ The Quote Management Application is a responsive frontend application designed t
 - **React Router**: For handling navigation between pages.
 - **Axios**: For making HTTP requests to the API.
 
+## Screen-Shots
+
+<img width="513" alt="image" src="https://github.com/user-attachments/assets/8d3b709a-a56e-4bb8-875d-b88f42ff2290">
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/0508007e-bfe3-4bb3-ad87-2d62e9d73c90">
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/20b25d05-99e5-4081-a436-d56f66dc9c2f">
+
+To See the best verison of project, prefer to setup project in your local but for quick demo you can visit below link.
+
+
+## To Visit Deploy Version
+
+[Live Link](https://crafto-quotes-managment-app.netlify.app)
+
 ## Setup and Installation
 
 1. **Clone the Repository**:
